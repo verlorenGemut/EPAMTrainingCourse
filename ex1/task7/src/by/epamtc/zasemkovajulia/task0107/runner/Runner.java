@@ -3,19 +3,15 @@ package by.epamtc.zasemkovajulia.task0107.runner;
 import by.epamtc.zasemkovajulia.task0107.entity.Point;
 import by.epamtc.zasemkovajulia.task0107.logic.Input;
 
-import java.util.Scanner;
+import static by.epamtc.zasemkovajulia.task0107.logic.DistanceLogic.closerToOrigin;
 
 public class Runner {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        Point p1 = Input.inputPoint(in);
-        Point p2 = Input.inputPoint(in);
 
-        if (p1.getRadiusVector() > p2.getRadiusVector()) {
-            System.out.println("Second point is closer to the origin");
-        } else {
-            System.out.println("First point is closer to the origin");
-        }
+        Point p1 = Input.inputPoint();
+        Point p2 = Input.inputPoint();
+
+        System.out.println("Point" + closerToOrigin(p1, p2) + " is closer to the origin");
     }
 }

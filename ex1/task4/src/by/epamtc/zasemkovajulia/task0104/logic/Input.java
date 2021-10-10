@@ -6,7 +6,10 @@ import java.util.Scanner;
 
 public class Input {
 
-    public static Numbers inputNumbers(Scanner in) {
+    public static Numbers inputNumbers() {
+
+        Scanner in = new Scanner(System.in);
+
         System.out.print("Enter a = ");
         int a = in.nextInt();
         System.out.print("Enter b = ");

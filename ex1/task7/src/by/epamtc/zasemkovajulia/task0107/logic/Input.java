@@ -6,10 +6,14 @@ import java.util.Scanner;
 
 public class Input {
 
-    public static Point inputPoint(Scanner in) {
+    public static Point inputPoint() {
+
+        Scanner in = new Scanner(System.in);
+
         System.out.println("Enter coordinates of point:");
         double x = in.nextDouble();
         double y = in.nextDouble();
+
         return new Point(x, y);
     }
 }

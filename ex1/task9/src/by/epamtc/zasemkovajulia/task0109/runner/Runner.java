@@ -13,6 +13,6 @@ public class Runner {
         double radius = in.nextDouble();
         Circle circle = new Circle(radius);
 
-        System.out.println(circle.toString());
+        System.out.println(circle);
     }
 }

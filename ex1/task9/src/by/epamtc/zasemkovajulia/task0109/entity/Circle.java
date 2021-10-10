@@ -4,16 +4,17 @@ import by.epamtc.zasemkovajulia.task0109.logic.GeometricCalculations;
 
 public class Circle {
     private double radius;
-    private double length;
-    private double square;
 
     public Circle(double radius) {
         this.radius = radius;
-        this.length = GeometricCalculations.lengthOfCircle(radius);
-        this.square = GeometricCalculations.squareOfCircle(radius);
     }
 
+    @Override
     public String toString() {
-        return "radius: " + radius + "\nlength: " + length + "\nsquare: " + square;
+        return "radius: " + radius +
+                "\nlength: " + GeometricCalculations.lengthOfCircle(radius) +
+                "\nsquare: " + GeometricCalculations.squareOfCircle(radius);
     }
+
+
 }

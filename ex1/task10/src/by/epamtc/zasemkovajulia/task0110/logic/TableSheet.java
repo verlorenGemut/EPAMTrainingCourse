@@ -8,7 +8,7 @@ public class TableSheet {
         System.out.println("x\ty");
         for(double i = a; i < b; i += h) {
             Function function = new Function(i);
-            System.out.println(function.getFunction());
+            System.out.println(function);
         }
     }
 }

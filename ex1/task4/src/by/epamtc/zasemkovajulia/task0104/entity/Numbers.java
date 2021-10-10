@@ -5,10 +5,6 @@ import java.util.ArrayList;
 public class Numbers {
     private ArrayList<Integer> arrayList;
 
-    public Numbers() {
-        arrayList = new ArrayList<>();
-    }
-
     public Numbers(int a, int b, int c, int d) {
         arrayList = new ArrayList<>();
         arrayList.add(a);

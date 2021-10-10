@@ -8,7 +8,7 @@ public class ArithmeticLogic {
         return number % 2 == 0;
     }
 
-    public static boolean checkStatement(Numbers numbers) {
+    public static boolean isStatementTrue(Numbers numbers) {
         int counterOfEven = 0;
         for(int i : numbers.getArrayList()) {
             if(isEven(i)) {

@@ -1,15 +1,10 @@
 package by.epamtc.zasemkovajulia.task0102.entity;
 
-public class Date {
+public class ShortDate {
     private int month;
     private int year;
 
-    public Date() {
-        month = 9;
-        year = 1999;
-    }
-
-    public Date(int month, int year) {
+    public ShortDate(int month, int year) {
         this.month = month;
         this.year = year;
     }
@@ -22,7 +17,8 @@ public class Date {
         return year;
     }
 
-    public String getDate() {
+    @Override
+    public String toString() {
         return month + "." + year;
     }
 }

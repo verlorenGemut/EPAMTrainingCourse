@@ -1,6 +1,6 @@
 package by.epamtc.zasemkovajulia.task0102.logic;
 
-import by.epamtc.zasemkovajulia.task0102.entity.Date;
+import by.epamtc.zasemkovajulia.task0102.entity.ShortDate;
 
 public class DateArithmetic {
     public static boolean isLeapYear(int year) {
@@ -23,14 +23,14 @@ public class DateArithmetic {
         return false;
     }
 
-    public static int getAmountOfDays(Date date) {
-        if (date.getMonth() == 2) {
-            if (isLeapYear(date.getYear())) {
+    public static int amountOfDays(ShortDate shortDate) {
+        if (shortDate.getMonth() == 2) {
+            if (isLeapYear(shortDate.getYear())) {
                 return 29;
             }
             return 28;
         }
-        if (isBigMonth(date.getMonth())) {
+        if (isBigMonth(shortDate.getMonth())) {
             return 31;
         }
         return 30;

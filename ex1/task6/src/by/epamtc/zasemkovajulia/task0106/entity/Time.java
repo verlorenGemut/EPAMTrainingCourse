@@ -17,7 +17,8 @@ public class Time {
         seconds = timeInSeconds - hours * 3600 - minutes * 60;
     }
 
-    public String getTime() {
+    @Override
+    public String toString() {
         return hours + " h " + minutes + " min " + seconds + " sec\n";
     }
 }
