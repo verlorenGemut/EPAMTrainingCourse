@@ -16,7 +16,7 @@ public class Main {
         basket.addBall(new Ball(1.3, Color.BLUE));
 
         System.out.println("Basket weighs " + basket.getSummaryWeight() + " g");
-        System.out.println("There are " + basket.countColorBalls(Color.BLUE) + " balls");
+        System.out.println("There is(are) " + basket.countColorBalls(Color.BLUE) + " blue ball(s)");
 
     }
 }
